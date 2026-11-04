@@ -4,3 +4,5 @@ myprojenv/
 venv/
 .venv/
 .env
+# Generated exercise output
+/file_handling/odds.txt

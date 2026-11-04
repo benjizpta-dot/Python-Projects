@@ -5,11 +5,11 @@ class GeometricShape:
     def get_color(self):
         return self.__color
     def set_color(self, color):
-        self.color = color
+        self.__color = color
     def is_filled(self):
         return self.__filled
     def set_filled(self, filled):
-        self.filled = filled
+        self.__filled = filled
     def __str__(self):
         return f'Color: {self.__color} Filled: {self.__filled}'
 class Circle(GeometricShape):
