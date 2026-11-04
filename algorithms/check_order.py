@@ -14,8 +14,9 @@ def check_order(numbers):
         return -1
     return 0
 
-list1 = [1,2,3,4]
-list2 = [4,3,2,1]
+if __name__ == "__main__":
+    list1 = [1,2,3,4]
+    list2 = [4,3,2,1]
 
-print(check_order(list1))
-print(check_order(list2))
+    print(check_order(list1))
+    print(check_order(list2))

@@ -49,9 +49,6 @@ class Student(Person):
             return f'Student: {super().__str__()} ID: = {(self.__ID)} Major: = {self.__major} GPA: = {self.__GPA} '
 
     def __eq__(self, other):
-        if self.__ID == other.ID:
-            return True
-        else:
-            return False
-    
-        
+        if not isinstance(other, Student):
+            return NotImplemented
+        return self.__ID == other.__ID
